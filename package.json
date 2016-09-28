@@ -1,0 +1,13 @@
+{
+  "name": "sass-tester",
+  "version": "0.0.1",
+  "devDependencies": {
+    "node-sass": "^3.10.0",
+    "watch": "^0.19.2"
+  },
+  "scripts": {
+    "build:css": "node-sass --include-path scss sass/styles.scss css/styles.css",
+    "build": "npm run build:css",
+    "build:sass": "watch 'npm run build' sass/"
+  }
+}
